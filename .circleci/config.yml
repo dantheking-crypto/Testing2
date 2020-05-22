@@ -5,6 +5,16 @@ jobs:
       - image: circleci/ruby:2.4.2-jessie-node
     steps:
       - run: echo "Hello world!"
+  test1:
+    docker: 
+      - image: circleci/ruby:2.4.2-jessie-node
+    steps:
+      - run: echo "Hello again!"
+  test2:
+    docker: 
+      - image: circleci/ruby:2.4.2-jessie-node
+    steps:
+      - run: echo "Hello for the third time!"
 
 workflows:
   version: 2
